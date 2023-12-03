@@ -7,9 +7,56 @@
 </head>
 <body>
 
+    <!-- <ul id="listelement">
+
+        <li>first</li>
+        <li>second</li>
+        
+    </ul> -->
+        
 
     
-    <!-- <script src="bank.js"></script> -->
-    <script src="customer.js"></script>
+
+
+    <!-- <script>
+        class List {
+                    constructor(List){
+                        this.list=List;
+                        this.textlist=[];
+                    }
+                    static createLi(text){
+                        const li=document.createElement("li");
+                        li.textContent=text;
+                        return li;
+                    }
+                    update(){   
+                       while(this.list.firstChild){
+                        this.list.removeChild(this.list.firstChild);
+                       }
+                       for(const text of this.textlist){ 
+                        this.list.appendChild(List.createLi(text));
+                       }
+                    }
+                    add(text){
+                        this.textlist.push(text);
+                        this.update();
+                    }
+                    remove(i,h=1,n){
+                        this.textlist.splice(i,h,n);
+                        this.update();
+                    }
+                }
+
+        const listitems=document.getElementById("listelement");
+        const lists=new List(listitems);
+        console.log(lists);
+        console.log(lists.list);
+    </script> -->
+    
+    
+    <!-- <script  src="bank.js"></script> -->
+    <!-- <script  src="customer.js"></script> -->
+    <!-- <script  src="account.js"></script> -->
+    <script src="teller.js"></script>
 </body>
 </html>
